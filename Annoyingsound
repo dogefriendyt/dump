@@ -1,0 +1,19 @@
+
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
+local SoundService = game:GetService("SoundService")
+
+if SoundService.RespectFilteringEnabled == false then
+	Notification.new("success", "Success", "Everyone can hear the sounds in this game!")
+	Notification.new("message", "Notification", "Subcribe to https://youtube.com@dogefriend!")
+else
+	Notification.new("warning", "Failed", "Script failed, unsupported game type.")
+end
+
+while wait() do
+	for _, sound in next, workspace:GetDescendants() do
+		if sound:IsA("Sound") then
+			sound.Volume = 10
+			sound:Play()
+		end
+	end
+end
