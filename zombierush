@@ -12,27 +12,36 @@ local Tab1Section = Tab1:NewSection("Autofarm")
 
 Tab1Section:NewButton("VG Hub", "Launches VG Hub", function()
 game:GetService("StarterGui"):SetCore("SendNotification",{
-                Title = "Notification";
+                Title = "HEY!";
                 Text = "Launched VG Hub";
                 Duration = 1.5;})
 loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
 
 end)
 
-Tab1Section:NewButton("Noclip", "Launches all scripts", function()
+Tab1Section:NewButton("Noclip", "Noclip", function()
 game:GetService("StarterGui"):SetCore("SendNotification",{
-                Title = "Notification";
-                Text = "Launched all scripts";
+                Title = "HEY!";
+                Text = "Noclipped now enabled.";
                 Duration = 1.5;})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/0exo/dump/main/noclip", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dogefriendyt/dump/main/noclip", true))()
 
 end)
 
-Tab1Section:NewButton("Anti AFK", "Launches all scripts", function()
+Tab1Section:NewButton("Anti AFK", "Never become AFK!", function()
 game:GetService("StarterGui"):SetCore("SendNotification",{
                 Title = "Notification";
                 Text = "Launched all scripts";
                 Duration = 1.5;})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/0exo/dump/main/antiafk", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dogefriendyt/dump/main/antiafk", true))()
+
+end)
+
+Tab1Section:NewButton("CMD-X Admin", "Epic admin", function()
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Notification";
+                Text = "Launched all scripts";
+                Duration = 1.5;})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 
 end)
