@@ -11,5 +11,5 @@ getgenv().Text_Color = Color3.fromRGB(240, 240, 240)
 getgenv().Sections_Color = Color3.fromRGB(150, 150, 150)
 getgenv().Divider_Color = Color3.fromRGB(60, 60, 60)
 --[[Loadstring]]--
-loadstring(game:HttpGet("https://raw.githubusercontent.com/dogefriendyt/dump/main/buildaboatblitz2"))()
+loadstring(game:HttpGet("https://gamingresources.github.io/BoatBlitz.lua"))()
 ---------------------------------------------------------------------------------
